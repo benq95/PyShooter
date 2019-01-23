@@ -1,0 +1,66 @@
+<CoordinateSystem> { Z-up } 
+<Material> CinderblockSloppy0005_1_S {
+  <Scalar> diffr { 0.640000 }
+  <Scalar> diffg { 0.640000 }
+  <Scalar> diffb { 0.640000 }
+  <Scalar> specr { 0.500000 }
+  <Scalar> specg { 0.500000 }
+  <Scalar> specb { 0.500000 }
+  <Scalar> shininess { 12.5 }
+  <Scalar> ambr { 1.000000 }
+  <Scalar> ambg { 1.000000 }
+  <Scalar> ambb { 1.000000 }
+  <Scalar> emitr { 0.000000 }
+  <Scalar> emitg { 0.000000 }
+  <Scalar> emitb { 0.000000 }
+}
+
+<Texture> UVMap_CinderblockSloppy0005_1_S.jpg {
+  "./tex/CinderblockSloppy0005_1_S.jpg"
+  <Scalar> envtype { MODULATE }
+  <Scalar> minfilter { LINEAR_MIPMAP_LINEAR }
+  <Scalar> magfilter { LINEAR_MIPMAP_LINEAR }
+  <Scalar> wrap { REPEAT }
+}
+
+  <Group> CinderblockSloppy0005_1_S {
+    <Transform> {
+      <Matrix4> {
+        4.0 8.88178366760566e-16 -8.881784197001252e-16 0.0 
+        8.88178366760566e-16 3.019916050561733e-07 4.0 0.0 
+        8.881784197001252e-16 -4.0 3.019916050561733e-07 0.0 
+        0.9576161503791809 0.0 0.0 1.0 
+      }
+    }
+    
+    <VertexPool> CinderblockSloppy0005_1_S {
+    
+      <Vertex> 0 {-1.042384 -0.000000 -2.000000
+        <UV>  {
+          -0.500000 -0.500000 
+        }
+      }
+      <Vertex> 1 {2.957616 -0.000000 -2.000000
+        <UV>  {
+          1.500000 -0.500000 
+        }
+      }
+      <Vertex> 2 {2.957616 0.000000 2.000000
+        <UV>  {
+          1.500000 1.500000 
+        }
+      }
+      <Vertex> 3 {-1.042384 0.000000 2.000000
+        <UV>  {
+          -0.500000 1.500000 
+        }
+      }}
+    
+    
+    <Polygon> {
+      <MRef> { CinderblockSloppy0005_1_S }
+      <Normal> {0.000000 -1.000000 0.000000}
+      <BFace> { 1 }
+      <VertexRef> { 0 1 2 3 <Ref> { CinderblockSloppy0005_1_S }} 
+    }
+  }

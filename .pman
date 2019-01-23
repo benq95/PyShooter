@@ -1,0 +1,15 @@
+[general]
+render_plugin = ""
+name = "Game"
+material_mode = "legacy"
+
+[run]
+auto_build = true
+main_file = "game/main.py"
+auto_save = true
+
+[build]
+asset_dir = "assets/"
+converter_hooks = [ "pman.hooks.converter_blend_bam",]
+ignore_patterns = [ "*.blend1", "*.blend2",]
+export_dir = "game/assets/"
